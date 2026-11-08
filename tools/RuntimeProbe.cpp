@@ -1,4 +1,6 @@
-// MIT. Standalone diagnostic only: no game injection. Optional synthetic GPU test.
+// SPDX-License-Identifier: GPL-3.0-only
+// Copyright (c) 2026 Ethanfel and contributors
+// Standalone diagnostic only: no game injection. Optional synthetic GPU test.
 // Uses NVIDIA's external SDK declarations; SDK files are not redistributed.
 #define WIN32_LEAN_AND_MEAN
 #define NOMINMAX

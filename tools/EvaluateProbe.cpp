@@ -1,4 +1,6 @@
-// MIT. Synthetic stationary planes, not captured game guides or a VR benchmark.
+// SPDX-License-Identifier: GPL-3.0-only
+// Copyright (c) 2026 Ethanfel and contributors
+// Synthetic stationary planes, not captured game guides or a VR benchmark.
 #define WIN32_LEAN_AND_MEAN
 #define NOMINMAX
 #include <windows.h>

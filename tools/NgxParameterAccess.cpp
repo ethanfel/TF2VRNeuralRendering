@@ -1,4 +1,6 @@
-// MIT. Compile with clang-cl: NGX's overloaded virtual parameter interface
+// SPDX-License-Identifier: GPL-3.0-only
+// Copyright (c) 2026 Ethanfel and contributors
+// Compile with clang-cl: NGX's overloaded virtual parameter interface
 // must use the MSVC C++ ABI, even when the diagnostic host uses MinGW.
 using size_t = decltype(sizeof(0));
 #include <nvsdk_ngx_params.h>

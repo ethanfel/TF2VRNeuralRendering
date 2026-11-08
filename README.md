@@ -58,6 +58,8 @@ Logs are in `plugins/layer/TF2VRNeuralRendering.log`. A saved setting does not g
 
 ## Development
 
-[Build instructions and tests](docs/BUILD.md). Licensed under [MIT](LICENSE); see [third-party notices](THIRD-PARTY-NOTICES.md).
+[Build instructions and tests](docs/BUILD.md). Original addon code is licensed under [GNU GPL v3.0 only](LICENSE) (`GPL-3.0-only`). Third-party components retain their own licenses; see [third-party notices](THIRD-PARTY-NOTICES.md).
+
+Copyright (c) 2026 Ethanfel and contributors.
 
 Independent community addon, unaffiliated with CircuitLord, Respawn, EA or NVIDIA.

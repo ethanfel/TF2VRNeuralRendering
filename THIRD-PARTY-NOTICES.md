@@ -1,5 +1,9 @@
 # Third-party notices
 
+The original addon code is licensed under GNU GPL version 3 only
+(`GPL-3.0-only`); see LICENSE. Copyright (c) 2026 Ethanfel and contributors.
+Third-party copyrights and license notices below are preserved.
+
 The Northstar bootstrap interfaces and registration implementation are adapted
 from TF2VRSeatedControls, Copyright (c) 2026 Ethanfel and contributors, MIT.
 Its bootstrap was adapted from Nighteyes' TF2VRBetterBindings:
@@ -24,8 +28,8 @@ weights, game assets and CircuitLord binaries are not bundled.
 
 Builds use NVIDIA DLSS/NGX SDK headers. This software contains source code
 provided by NVIDIA Corporation. NVIDIA components remain governed by their
-own terms; see licenses/NVIDIA-RTX-SDKs-LICENSE.txt. The MIT license applies
-to the original addon code, not those external SDK components.
+own terms; see licenses/NVIDIA-RTX-SDKs-LICENSE.txt. This license change
+does not relicense NVIDIA SDK components or runtime DLLs.
 
 The menu uses Northstar's public Squirrel Mod Settings and VGUI interfaces.
 ConVar layout research was checked against NorthstarLauncher tier1 headers and
