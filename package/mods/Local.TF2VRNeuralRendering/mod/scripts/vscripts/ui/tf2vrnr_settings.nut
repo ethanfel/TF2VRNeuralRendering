@@ -35,15 +35,21 @@ void function TF2VRNR_MenuLinks()
 {
 	// Add links without replacing the VR mod's menus or scripts.
 	if ( "TF2VRSettings" in uiGlobal.menus )
-		AddMenuFooterOption( GetMenu( "TF2VRSettings" ), BUTTON_X, PrependControllerPrompts( BUTTON_X, "DLSS 5" ), "DLSS 5", TF2VRNR_Open )
+		AddMenuFooterOption( GetMenu( "TF2VRSettings" ), BUTTON_X, PrependControllerPrompts( BUTTON_X, "DLSS 5" ), "DLSS 5", TF2VRNR_OpenFooter )
 	if ( "InGameSPMenu" in uiGlobal.menus )
-		AddMenuFooterOption( GetMenu( "InGameSPMenu" ), BUTTON_Y, PrependControllerPrompts( BUTTON_Y, "DLSS 5" ), "DLSS 5", TF2VRNR_Open )
+		AddMenuFooterOption( GetMenu( "InGameSPMenu" ), BUTTON_Y, PrependControllerPrompts( BUTTON_Y, "DLSS 5" ), "DLSS 5", TF2VRNR_OpenFooter )
 	printt( "[TF2VRNR] DLSS 5 / VR menu registered" )
 }
 
 void function TF2VRNR_Open()
 {
 	AdvanceMenu( GetMenu( "TF2VRNRSettings" ) )
+}
+
+// Footer callbacks receive their button; ModSettings_AddButton takes no args.
+void function TF2VRNR_OpenFooter( var button )
+{
+	TF2VRNR_Open()
 }
 
 void function TF2VRNR_Init()
@@ -93,7 +99,7 @@ void function TF2VRNR_Init()
 	AddMenuEventHandler( file.menu, eUIEvent.MENU_OPEN, TF2VRNR_Opened )
 	AddMenuEventHandler( file.menu, eUIEvent.MENU_CLOSE, TF2VRNR_Closed )
 	AddMenuFooterOption( file.menu, BUTTON_B, "#B_BUTTON_BACK", "#BACK" )
-	AddMenuFooterOption( file.menu, BUTTON_X, "#X_BUTTON_APPLY", "#APPLY", TF2VRNR_Apply )
+	AddMenuFooterOption( file.menu, BUTTON_X, "#X_BUTTON_APPLY", "#APPLY", TF2VRNR_ApplyButton )
 }
 
 void function TF2VRNR_Status( string text )

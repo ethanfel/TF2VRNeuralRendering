@@ -1,6 +1,6 @@
 # Building
 
-The supported build uses Linux, CMake 3.24+, Ninja, MinGW-w64, `clang-cl` and OpenXR SDK headers. NVIDIA headers are external dependencies and are not included in this repository.
+The supported build uses Linux, CMake 3.24+, Ninja, Python 3, MinGW-w64, `clang-cl` and OpenXR SDK headers. NVIDIA headers are external dependencies and are not included in this repository.
 
 ## Windows addon
 
@@ -33,7 +33,7 @@ cmake --build build-native
 ctest --test-dir build-native --output-on-failure
 ```
 
-These cover frame lifecycle, OpenXR routing, stereo frame delivery, and menu settings synchronization. They do not start the game or require a headset.
+These cover frame lifecycle, OpenXR routing, stereo frame delivery, menu settings synchronization and UI callback signatures. The callback check reproduces the startup failure caused by passing a no-argument function to a footer expecting `var button`; it is not a full Squirrel compiler. These tests do not start the game or require a headset.
 
 The Windows targets `menu_config_tests` and `menu_bridge_probe` check INI persistence and the ConVar bridge. Run them only in a separate test Wine/Proton prefix. The bridge probe takes the path to the installed game's `engine.dll`; it maps that file without starting Titanfall or EA. Its adjacent `vstdlib.dll` is a test fixture and must never be installed with the addon.
 
