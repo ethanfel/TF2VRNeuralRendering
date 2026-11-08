@@ -1,0 +1,11 @@
+{
+  "file_format_version": "1.0.0",
+  "api_layer": {
+    "name": "XR_APILAYER_TF2VR_neural_rendering",
+    "library_path": ".\\TF2VRNeuralRenderingLayer.dll",
+    "api_version": "1.0",
+    "implementation_version": "1",
+    "description": "Titanfall 2 VR Neural Rendering, DLAA, experimental stereo frame generation and capture",
+    "disable_environment": "DISABLE_TF2VR_NEURAL_RENDERING"
+  }
+}

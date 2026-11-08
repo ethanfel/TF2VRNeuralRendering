@@ -1,0 +1,213 @@
+resource/ui/menus/tf2vrnr_settings.menu
+{
+	menu
+	{
+		ControlName Frame
+		xpos 0
+		ypos 0
+		zpos 3
+		wide f0
+		tall f0
+		autoResize 0
+		visible 1
+		enabled 1
+		pinCorner 0
+		PaintBackgroundType 0
+		infocus_bgcolor_override "0 0 0 0"
+		outoffocus_bgcolor_override "0 0 0 0"
+		Vignette
+		{
+			ControlName ImagePanel
+			InheritProperties MenuVignette
+		}
+		Backdrop
+		{
+			ControlName Label
+			wide f0
+			tall f0
+			labelText ""
+			bgcolor_override "0 0 0 210"
+			paintbackground 1
+		}
+		Title
+		{
+			ControlName Label
+			InheritProperties MenuTitle
+			labelText "DLSS 5 / VR"
+		}
+		ImgTopBar
+		{
+			ControlName ImagePanel
+			InheritProperties MenuTopBar
+		}
+		Description
+		{
+			ControlName Label
+			InheritProperties OptionMenuTooltip
+			xpos 1000
+			ypos 185
+			wide 760
+			tall 420
+			labelText "Choose your settings, then Apply."
+		}
+		Status
+		{
+			ControlName Label
+			InheritProperties OptionMenuTooltip
+			xpos 1000
+			ypos 650
+			wide 760
+			tall 240
+			labelText ""
+		}
+		Row_nr
+		{
+			ControlName RuiButton
+			InheritProperties SwitchButton
+			style DialogListButton
+			xpos 120
+			ypos 185
+			tabPosition 1
+		}
+		Row_dlaa
+		{
+			ControlName RuiButton
+			InheritProperties SwitchButton
+			style DialogListButton
+			xpos 120
+			ypos 245
+			tabPosition 2
+		}
+		Row_fg
+		{
+			ControlName RuiButton
+			InheritProperties SwitchButton
+			style DialogListButton
+			xpos 120
+			ypos 305
+			tabPosition 3
+		}
+		Row_model
+		{
+			ControlName RuiButton
+			InheritProperties SwitchButton
+			style DialogListButton
+			xpos 120
+			ypos 365
+			tabPosition 4
+		}
+		Row_resolution
+		{
+			ControlName RuiButton
+			InheritProperties SwitchButton
+			style DialogListButton
+			xpos 120
+			ypos 425
+			tabPosition 5
+		}
+		Row_strength
+		{
+			ControlName SliderControl
+			InheritProperties SliderControl
+			xpos 98
+			ypos 485
+			conCommand "tf2vrnr_edit_strength"
+			minValue 0.0
+			maxValue 100.0
+			stepSize 5.0
+			inverseFill 0
+			BtnDropButton
+			{
+				ControlName RuiButton
+				InheritProperties WideButton
+				clip 0
+				autoResize 1
+				pinCorner 0
+				visible 1
+				enabled 1
+				style SliderButton
+				command ""
+			}
+		}
+		Row_tone
+		{
+			ControlName SliderControl
+			InheritProperties SliderControl
+			xpos 98
+			ypos 545
+			conCommand "tf2vrnr_edit_tone"
+			minValue 0.0
+			maxValue 100.0
+			stepSize 5.0
+			inverseFill 0
+			BtnDropButton
+			{
+				ControlName RuiButton
+				InheritProperties WideButton
+				clip 0
+				autoResize 1
+				pinCorner 0
+				visible 1
+				enabled 1
+				style SliderButton
+				command ""
+			}
+		}
+		Row_detail
+		{
+			ControlName SliderControl
+			InheritProperties SliderControl
+			xpos 98
+			ypos 605
+			conCommand "tf2vrnr_edit_detail"
+			minValue 0.0
+			maxValue 100.0
+			stepSize 5.0
+			inverseFill 0
+			BtnDropButton
+			{
+				ControlName RuiButton
+				InheritProperties WideButton
+				clip 0
+				autoResize 1
+				pinCorner 0
+				visible 1
+				enabled 1
+				style SliderButton
+				command ""
+			}
+		}
+		BtnApply
+		{
+			ControlName RuiButton
+			InheritProperties WideButton
+			xpos 120
+			ypos 715
+			wide 780
+			tabPosition 9
+		}
+		BtnRevert
+		{
+			ControlName RuiButton
+			InheritProperties WideButton
+			xpos 120
+			ypos 770
+			wide 780
+			tabPosition 10
+		}
+		BtnAllOff
+		{
+			ControlName RuiButton
+			InheritProperties WideButton
+			xpos 120
+			ypos 825
+			wide 780
+			tabPosition 11
+		}
+		FooterButtons
+		{
+			ControlName CNestedPanel
+			InheritProperties FooterButtons
+		}
+	}
+}

@@ -1,0 +1,114 @@
+{
+  "Name": "Local.TF2VRNeuralRendering",
+  "Description": "In-game VR controls for Neural Rendering, DLAA, model tuning and experimental stereo frame generation.",
+  "Version": "0.1.0",
+  "LoadPriority": 5,
+  "ConVars": [
+    {
+      "Name": "tf2vrnr_edit_nr",
+      "DefaultValue": "0"
+    },
+    {
+      "Name": "tf2vrnr_edit_dlaa",
+      "DefaultValue": "0"
+    },
+    {
+      "Name": "tf2vrnr_edit_fg",
+      "DefaultValue": "0"
+    },
+    {
+      "Name": "tf2vrnr_edit_model",
+      "DefaultValue": "1"
+    },
+    {
+      "Name": "tf2vrnr_edit_resolution",
+      "DefaultValue": "50"
+    },
+    {
+      "Name": "tf2vrnr_edit_strength",
+      "DefaultValue": "50"
+    },
+    {
+      "Name": "tf2vrnr_edit_tone",
+      "DefaultValue": "100"
+    },
+    {
+      "Name": "tf2vrnr_edit_detail",
+      "DefaultValue": "100"
+    },
+    {
+      "Name": "tf2vrnr_saved_nr",
+      "DefaultValue": "0"
+    },
+    {
+      "Name": "tf2vrnr_saved_dlaa",
+      "DefaultValue": "0"
+    },
+    {
+      "Name": "tf2vrnr_saved_fg",
+      "DefaultValue": "0"
+    },
+    {
+      "Name": "tf2vrnr_saved_model",
+      "DefaultValue": "1"
+    },
+    {
+      "Name": "tf2vrnr_saved_resolution",
+      "DefaultValue": "50"
+    },
+    {
+      "Name": "tf2vrnr_saved_strength",
+      "DefaultValue": "50"
+    },
+    {
+      "Name": "tf2vrnr_saved_tone",
+      "DefaultValue": "100"
+    },
+    {
+      "Name": "tf2vrnr_saved_detail",
+      "DefaultValue": "100"
+    },
+    {
+      "Name": "tf2vrnr_request",
+      "DefaultValue": "0"
+    },
+    {
+      "Name": "tf2vrnr_command",
+      "DefaultValue": "0"
+    },
+    {
+      "Name": "tf2vrnr_ack",
+      "DefaultValue": "0"
+    },
+    {
+      "Name": "tf2vrnr_base",
+      "DefaultValue": "0"
+    },
+    {
+      "Name": "tf2vrnr_revision",
+      "DefaultValue": "0"
+    },
+    {
+      "Name": "tf2vrnr_runtimes",
+      "DefaultValue": "0"
+    },
+    {
+      "Name": "tf2vrnr_status",
+      "DefaultValue": "0"
+    },
+    {
+      "Name": "tf2vrnr_ready",
+      "DefaultValue": "0"
+    }
+  ],
+  "Scripts": [
+    {
+      "Path": "ui/tf2vrnr_settings.nut",
+      "RunOn": "UI",
+      "UICallback": {
+        "Before": "TF2VRNR_RegisterMenu",
+        "After": "TF2VRNR_MenuLinks"
+      }
+    }
+  ]
+}
